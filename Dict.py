@@ -5,12 +5,12 @@ def cpu_check(server_cpu):
     for server_name, cpu in server_cpu.items():
         if cpu >= 80:
             unhealthy += 1
-            print(server_name, cpu)
+            print(server_name, cpu, "ALMOST CRASHING")
         elif cpu >= 60:
-           print(server_name, cpu)
+           print (server_name, cpu, "WARNING")
            unhealthy += 1
         else :
-           print ("all good")
+           print ("All good", server_name, cpu,)
            healthy = 0
  
 server_cpu = {
