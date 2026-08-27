@@ -1,3 +1,4 @@
+
 import re
 
 log_data = """
@@ -6,6 +7,5 @@ Warning from 10.0.0.5
 Connection reset by 172.16.0.2
 """
 
-# ✅ Correct regex pattern — no extra backslashes or quotes
-ips = re.findall(r"\d+\.\d+\.\d+\.\d+", log_data)
-print(ips)
+find_ip = re.findall(r"\d+\.\d+\.\d+\.\d+", log_data)
+print(find_ip)
