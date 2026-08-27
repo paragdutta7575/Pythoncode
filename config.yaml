@@ -1,0 +1,4 @@
+# config.yaml
+server: web-1
+cpu: 45
+status: healthy
